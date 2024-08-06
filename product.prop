@@ -1,0 +1,29 @@
+# Radio
+persist.radio.multisim.config=tsts
+persist.vendor.radio.msimmode=tsts
+persist.vendor.radio.tsd.multisimmode=2
+ro.telephony.sim.count=3
+telephony.active_modems.max_count=3
+
+# Miscellaneous
+persist.sys.dmf.support=1
+persist.sys.oobe_battery=unremoveable
+ro.boot.product.hardware.sku=tsts
+ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural;
+ro.fingerprint_support=1
+ro.fingerprint_wakeup_performance_opt=1
+ro.kom_demomode_plus_support=1
+ro.music_gesture_support=1
+ro.onekeyclean_support=1
+ro.power_support=1
+ro.proc_mgr.support=1
+ro.product.apm=1
+ro.product.apm.version=3.0
+ro.quick_charge_support=1
+ro.rlk_multi_gsensor_support=1
+ro.scence.monitor.support=1
+ro.setupwizard.rotation_locked=true
+ro.tapping_wake_support=1
+ro.teop.support=1
+ro.vendor.radio.max.multisim=tsts
+sys.surfaceflinger.perf_fps_switch=1
