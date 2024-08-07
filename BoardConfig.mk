@@ -8,7 +8,15 @@ DEVICE_PATH := device/infinix/x689f
 
 # A/B
 AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS +=
+AB_OTA_PARTITIONS += \
+    vbmeta_vendor \
+    product \
+    system \
+    system_ext \
+    boot \
+    vbmeta_system \
+    vendor
+
 BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Architecture
@@ -73,7 +81,6 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
-TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6765
@@ -89,6 +96,32 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+# i have no idea what is that, but build system complained about those
+ODM_MANIFEST_FILES += $(DEVICE_PATH)/configs/vintf/manifest_dsds.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest_qsqs.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest_ss.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest_tsts.xml
+# and a bit more from another dir:
+ODM_MANIFEST_FILES += $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.boot@1.1.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.cas@1.2-service.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.gpu@1.0-service.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.health@2.1.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.wifi@1.0-service.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.wifi.hostapd.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest/lights-mtk-default.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest/manifest_storage.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest/manifest_swfingerprint.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest/manifest_tneengine.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest/manifest.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest/power-default.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest/vendor.mediatek.hardware.dplanner@2.0-service.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest/vendor.mediatek.hardware.paytrigger@1.0-service.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest/vendor.mediatek.hardware.tranHwInfo@1.0.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest/vendor.transsion.hardware.trancam.trancamserver@1.0.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest/vibrator-mtk-default.xml
 
 # Inherit the proprietary files
 include vendor/infinix/x689f/BoardConfigVendor.mk

@@ -487,13 +487,10 @@ vendor/lib/hw/local_time.default.so
 vendor/lib64/hw/local_time.default.so
 
 # Media
-etc/seccomp_policy/mediacodec.policy
-lib/libmedia_codeclist.so
 lib/libstagefright_bufferpool@2.0.1.so
 lib/libstagefright_codecbase.so
 lib/libstagefright_framecapture_utils.so
 lib/libstagefright_wfd_mtk.so
-lib64/libmedia_codeclist.so
 lib64/libstagefright_bufferpool@2.0.1.so
 lib64/libstagefright_codecbase.so
 lib64/libstagefright_framecapture_utils.so
@@ -649,16 +646,6 @@ vendor/etc/wifi/wpa_supplicant.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # Miscellaneous
-odm/etc/vintf/manifest_dsds.xml
-odm/etc/vintf/manifest_qsqs.xml
-odm/etc/vintf/manifest_ss.xml
-odm/etc/vintf/manifest_tsts.xml
-vendor/app/GoogleNetworkStackResOverlay/GoogleNetworkStackResOverlay.apk
-vendor/app/GoogleTetheringResOverlay/GoogleTetheringResOverlay.apk
-vendor/app/InProcessTetheringResOverlay/InProcessTetheringResOverlay.apk
-vendor/app/NetworkStackInProcessResOverlay/NetworkStackInProcessResOverlay.apk
-vendor/app/NetworkStackResOverlay/NetworkStackResOverlay.apk
-vendor/app/TetheringResOverlay/TetheringResOverlay.apk
 vendor/app/mcRegistry/020f0000000000000000000000000000.drbin
 vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin
 vendor/app/mcRegistry/030b0000000000000000000000000000.drbin
@@ -1171,18 +1158,6 @@ vendor/etc/security/cacerts_supl/3ad48a91.0
 vendor/etc/security/cacerts_supl/7651b327.0
 vendor/etc/security/cacerts_supl/c542733d.0
 vendor/etc/security/cacerts_supl/f336e3d1.0
-vendor/etc/vintf/manifest/android.hardware.gpu@1.0-service.xml
-vendor/etc/vintf/manifest/lights-mtk-default.xml
-vendor/etc/vintf/manifest/manifest.xml
-vendor/etc/vintf/manifest/manifest_storage.xml
-vendor/etc/vintf/manifest/manifest_swfingerprint.xml
-vendor/etc/vintf/manifest/manifest_tneengine.xml
-vendor/etc/vintf/manifest/power-default.xml
-vendor/etc/vintf/manifest/vendor.mediatek.hardware.dplanner@2.0-service.xml
-vendor/etc/vintf/manifest/vendor.mediatek.hardware.paytrigger@1.0-service.xml
-vendor/etc/vintf/manifest/vendor.mediatek.hardware.tranHwInfo@1.0.xml
-vendor/etc/vintf/manifest/vendor.transsion.hardware.trancam.trancamserver@1.0.xml
-vendor/etc/vintf/manifest/vibrator-mtk-default.xml
 vendor/etc/MNL_Config.xml
 vendor/etc/aee-config
 vendor/etc/arc.ini
