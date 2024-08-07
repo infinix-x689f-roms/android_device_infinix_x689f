@@ -9,7 +9,6 @@ telephony.active_modems.max_count=3
 persist.sys.dmf.support=1
 persist.sys.oobe_battery=unremoveable
 ro.boot.product.hardware.sku=tsts
-ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural;
 ro.fingerprint_support=1
 ro.fingerprint_wakeup_performance_opt=1
 ro.kom_demomode_plus_support=1
