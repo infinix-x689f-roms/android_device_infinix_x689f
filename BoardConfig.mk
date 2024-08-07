@@ -102,15 +102,10 @@ ODM_MANIFEST_FILES += $(DEVICE_PATH)/configs/vintf/manifest_dsds.xml \
     $(DEVICE_PATH)/configs/vintf/manifest_ss.xml \
     $(DEVICE_PATH)/configs/vintf/manifest_tsts.xml
 # and a bit more from another dir:
-ODM_MANIFEST_FILES += $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.boot@1.1.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.cas@1.2-service.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.gpu@1.0-service.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.health@2.1.xml \
+ODM_MANIFEST_FILES += $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.gpu@1.0-service.xml \
     $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.wifi@1.0-service.xml \
     $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.wifi.hostapd.xml \
     $(DEVICE_PATH)/configs/vintf/manifest/lights-mtk-default.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml \
     $(DEVICE_PATH)/configs/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml \
     $(DEVICE_PATH)/configs/vintf/manifest/manifest_storage.xml \
     $(DEVICE_PATH)/configs/vintf/manifest/manifest_swfingerprint.xml \
