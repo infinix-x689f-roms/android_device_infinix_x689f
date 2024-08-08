@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2024 The LineageOS Project
+# copyright (c) 2024 Nahagliiv
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -75,6 +76,8 @@ BOARD_INFINIX_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6765
+BOARD_HAS_MTK_HARDWARE := true
+BOARD_HAVE_MTK_FM := true
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
@@ -96,12 +99,10 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-# i have no idea what is that, but build system complained about those
 ODM_MANIFEST_FILES += $(DEVICE_PATH)/configs/vintf/manifest_dsds.xml \
     $(DEVICE_PATH)/configs/vintf/manifest_qsqs.xml \
     $(DEVICE_PATH)/configs/vintf/manifest_ss.xml \
     $(DEVICE_PATH)/configs/vintf/manifest_tsts.xml
-# and a bit more from another dir:
 ODM_MANIFEST_FILES += $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.gpu@1.0-service.xml \
     $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.wifi@1.0-service.xml \
     $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.wifi.hostapd.xml \
@@ -117,6 +118,10 @@ ODM_MANIFEST_FILES += $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.gpu
     $(DEVICE_PATH)/configs/vintf/manifest/vendor.mediatek.hardware.tranHwInfo@1.0.xml \
     $(DEVICE_PATH)/configs/vintf/manifest/vendor.transsion.hardware.trancam.trancamserver@1.0.xml \
     $(DEVICE_PATH)/configs/vintf/manifest/vibrator-mtk-default.xml
+# from vendor
+DEVICE_MATRIX_FILE += $(DEVICE_PATH)/compatibility_matrix.xml
+# /system/etc/compatibility_matrix.device.xml from XOS
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/framework_compatibility_matrix.xml
 
 # Inherit the proprietary files
 include vendor/infinix/x689f/BoardConfigVendor.mk
