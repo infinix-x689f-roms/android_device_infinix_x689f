@@ -103,21 +103,6 @@ ODM_MANIFEST_FILES += $(DEVICE_PATH)/configs/vintf/manifest_dsds.xml \
     $(DEVICE_PATH)/configs/vintf/manifest_qsqs.xml \
     $(DEVICE_PATH)/configs/vintf/manifest_ss.xml \
     $(DEVICE_PATH)/configs/vintf/manifest_tsts.xml
-ODM_MANIFEST_FILES += $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.gpu@1.0-service.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.wifi@1.0-service.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest/android.hardware.wifi.hostapd.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest/lights-mtk-default.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest/manifest_storage.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest/manifest_swfingerprint.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest/manifest_tneengine.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest/manifest.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest/power-default.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest/vendor.mediatek.hardware.dplanner@2.0-service.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest/vendor.mediatek.hardware.paytrigger@1.0-service.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest/vendor.mediatek.hardware.tranHwInfo@1.0.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest/vendor.transsion.hardware.trancam.trancamserver@1.0.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest/vibrator-mtk-default.xml
 # from vendor
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/compatibility_matrix.xml
 # /system/etc/compatibility_matrix.device.xml from XOS
