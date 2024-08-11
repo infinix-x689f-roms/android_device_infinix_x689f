@@ -542,9 +542,7 @@ vendor/bin/hw/wpa_supplicant
 vendor/bin/hostapd_cli
 vendor/bin/wpa_cli
 vendor/etc/init/android.hardware.wifi.supplicant-service.rc
-vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
 vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
-vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
 vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so
 vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so
 vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.2.so
@@ -1065,7 +1063,6 @@ vendor/etc/vintf/manifest/manifest.xml
 vendor/etc/vintf/manifest/manifest_storage.xml
 vendor/etc/vintf/manifest/manifest_swfingerprint.xml
 vendor/etc/vintf/manifest/manifest_tneengine.xml
-vendor/etc/vintf/manifest/power-default.xml
 vendor/etc/vintf/manifest/vendor.mediatek.hardware.dplanner@2.0-service.xml
 vendor/etc/vintf/manifest/vendor.mediatek.hardware.paytrigger@1.0-service.xml
 vendor/etc/vintf/manifest/vendor.mediatek.hardware.tranHwInfo@1.0.xml
