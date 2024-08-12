@@ -32,6 +32,23 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.blossom-libperfmgr \
+    android.hardware.power@1.0.vendor \
+    android.hardware.power@1.1.vendor \
+    android.hardware.power@1.2.vendor \
+    android.hardware.power@1.3.vendor
+
+PRODUCT_PACKAGES += \
+    libmtkperf_client_vendor \
+    libmtkperf_client
+
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub \
+    vendor.mediatek.hardware.mtkpower@1.0.vendor \
+    vendor.mediatek.hardware.mtkpower@1.1.vendor
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
@@ -47,8 +64,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_CHARACTERISTICS := default
 
 # Rootdir
-PRODUCT_PACKAGES += \
-
 PRODUCT_PACKAGES += \
     factory_init.connectivity.rc \
     factory_init.project.rc \
@@ -72,6 +87,11 @@ PRODUCT_COPY_FILES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/mediatek \
+    hardware/mediatek/libmtkperf_client \
+    $(LOCAL_PATH)/power-libperfmgr \
     $(LOCAL_PATH)
 
 # Inherit the proprietary files

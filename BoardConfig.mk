@@ -102,7 +102,8 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-ODM_MANIFEST_FILES += $(DEVICE_PATH)/configs/vintf/manifest_dsds.xml \
+ODM_MANIFEST_FILES += \
+    $(DEVICE_PATH)/configs/vintf/manifest_dsds.xml \
     $(DEVICE_PATH)/configs/vintf/manifest_qsqs.xml \
     $(DEVICE_PATH)/configs/vintf/manifest_ss.xml \
     $(DEVICE_PATH)/configs/vintf/manifest_tsts.xml
