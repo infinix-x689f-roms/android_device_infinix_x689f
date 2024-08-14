@@ -102,13 +102,12 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-ODM_MANIFEST_FILES += $(DEVICE_PATH)/configs/vintf/manifest_dsds.xml \
+ODM_MANIFEST_FILES += \
+    $(DEVICE_PATH)/configs/vintf/manifest_dsds.xml \
     $(DEVICE_PATH)/configs/vintf/manifest_qsqs.xml \
     $(DEVICE_PATH)/configs/vintf/manifest_ss.xml \
     $(DEVICE_PATH)/configs/vintf/manifest_tsts.xml
-# from vendor
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/compatibility_matrix.xml
-# /system/etc/compatibility_matrix.device.xml from XOS
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/framework_compatibility_matrix.xml
 
 # Inherit the proprietary files
